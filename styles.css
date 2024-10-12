@@ -1,0 +1,211 @@
+/* Estilos generales */
+body {
+    padding: 40px;
+    background-color: #121212; /* Color de fondo ajustado */
+    min-height: 100vh; /* Altura mínima de 100vh */
+    color: #ffffff; /* Color de texto en blanco para mayor contraste */
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  .cards-page {
+    display: flex;
+    justify-content: center;
+  }
+  /* Estilo de la tarjeta */
+  .card {
+      background-color: #1d1d1d;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+      width: 100%;
+  }
+  
+  /* Estilo del input de contraseña */
+  .password-input-container {
+      margin-bottom: 20px;
+      position: relative;
+  }
+  
+  .password-wrapper {
+      position: relative;
+      display: flex;
+      align-items: center;
+  }
+  
+  .customInput {
+      width: 100%;
+      padding: 12px;
+      background-color: #2a2a2a;
+      border: 1px solid #444;
+      color: white;
+      border-radius: 4px;
+      font-size: 1.1rem;
+  }
+  
+  /* Botón de mostrar/ocultar contraseña */
+  .toggle-password {
+      background: none;
+      border: none;
+      position: absolute;
+      right: 10px;
+      font-size: 1.2rem;
+      cursor: pointer;
+      color: #ff9800;
+  }
+  
+  .toggle-password:hover {
+      color: #ffa500;
+  }
+  
+  /* Estilo para la etiqueta y el rango de seguridad */
+  .password-strength-container {
+      margin-bottom: 20px;
+      text-align: left;
+  }
+  
+  .label-range {
+      display: flex;
+      justify-content: space-between;
+      font-size: 1.2rem;
+      margin-bottom: 8px;
+      color: #ffffff;
+  }
+  
+  .range-input {
+      -webkit-appearance: none;
+      width: 100%;
+      height: 8px;
+      background: #444;
+      border-radius: 5px;
+      outline: none;
+      transition: background 0.3s ease;
+  }
+  
+  .range-input::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 18px;
+      height: 18px;
+      background: #ff9800;
+      border-radius: 50%;
+      cursor: pointer;
+      box-shadow: 0 0 10px rgba(255, 140, 0, 0.7);
+      transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .range-input::-moz-range-thumb {
+      width: 18px;
+      height: 18px;
+      background: #ff9800;
+      border-radius: 50%;
+      cursor: pointer;
+      box-shadow: 0 0 10px rgba(255, 140, 0, 0.7);
+      transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .password-feedback {
+      font-size: 1.2rem;
+      font-weight: bold;
+      text-align: left;
+      color: #fff;
+      margin-top: 10px;
+  }
+  
+  .password-feedback.poco-segura {
+      color: red;
+  }
+  
+  .password-feedback.segura {
+      color: orange;
+  }
+  
+  .password-feedback.muy-segura {
+      color: green;
+  }
+  
+  .password-improvement-container {
+      margin-top: 20px;
+      text-align: left;
+  }
+  
+  .password-improvement {
+      color: #ff9800;
+      font-size: 1rem;
+  }
+  
+  .password-examples {
+      margin-top: 20px;
+      color: #a9a9a9;
+      font-size: 1.1rem;
+  }
+  
+  .password-examples code {
+      color: #ff9800;
+      font-weight: bold;
+  }
+  
+  #passwordExamplesList {
+      margin-top: 10px;
+      list-style-type: none;
+      padding-left: 0;
+  }
+  
+  #passwordExamplesList li {
+      margin-bottom: 10px;
+      color: #ccc;
+  }
+  /* Social section styles */
+  .social-section {
+    text-align: center;
+    margin-top: 50px; /* Ajusta el margen superior */
+    color: white; /* Color del texto */
+  }
+  
+  .blueprint-title {
+    font-size: 36px; /* Tamaño de fuente más grande */
+    font-weight: bold;
+  }
+  
+  .social-text {
+    font-size: 24px; /* Tamaño de fuente más grande */
+    margin-bottom: 20px; /* Espaciado debajo del texto */
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Espaciado entre iconos */
+  }
+  
+  .icon {
+    width: 40px; /* Ajusta el tamaño del icono */
+    height: 40px; /* Ajusta el tamaño del icono */
+    fill: white; /* Color del icono */
+    transition: fill 0.3s ease; /* Transición suave para hover */
+  }
+  
+  .social-icons a:hover .icon {
+    fill: #ff8f00; /* Color al pasar el mouse (naranja) */
+  }
+  
+  .containerTitle {
+    grid-column: span 3; /* El título ocupa tres columnas */
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .main-title {
+    color: #ccc;
+    font-size: 3em;
+    margin: 0;
+  }
+  
+  .subtitle {
+    font-size: 1.5em;
+    margin: 0;
+    color: #a9a9a9;
+  }
+  
